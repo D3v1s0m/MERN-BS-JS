@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #3498db, #e74c3c);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: blue;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+table td {
+    padding-right: 10px;
+    border: 1px solid #000;
+}
+
+table td label {
+    text-align: right;
+    display: inline-block;
+    width: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    width: 100%;
+}
+
+.radio-group {
+    display: flex;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+#login-link {
+    float: right;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Task 3</title>
+    <script>
+        function multiply(a, b) {
+            document.getElementById("result").innerHTML = a + " * " + b + " = " + a * b;
+        }
+        function divide(a, b) {
+            document.getElementById("result").innerHTML = a + " / " + b + " = " + a / b;
+        }
+
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>JS Task 3</h1>
+        <div>
+            <p>Enter two numbers</p>
+            <input type="text" id="num1" name="num1">
+            <input type="text" id="num2" name="num2">
+            <input type="button" value="Multiply" onclick="multiply(document.getElementById('num1').value, document.getElementById('num2').value)">
+            <input type="button" value="Divide" onclick="divide(document.getElementById('num1').value, document.getElementById('num2').value)">
+            <p id="result">(Result will be displayed here)</p>
+        </div>
+    </center>
+</body>
+
+
+</html>

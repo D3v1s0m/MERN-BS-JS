@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Task 2</title>
+    <script>
+        function sortString(str) {
+            var arr = str.split("");
+            arr.sort();
+            document.getElementById("result").innerHTML += arr.join("");
+        }        
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>JS Task 2</h1>
+        <div>
+            <p>Enter a string</p>
+            <input type="text" id="str" name="str">
+            <input type="button" value="Sort" onclick="sortString(document.getElementById('str').value)">
+            <p id="result">Result: </p>
+        </div>
+    </center>
+</body>
+
+</html>

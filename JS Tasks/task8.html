@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task 8 - Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="task8.css">
+</head>
+
+<body>
+    <h1>Registration form</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="firstname">First name:</label></td>
+                <td><input type="text" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last name:</label></td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="repassword">Re-enter Password:</label></td>
+                <td><input type="password" name="repassword" required></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><label>Gender:</label></td>
+                <td>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" value="Male">Male
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" value="Female">Female
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea name="address" cols="30" rows="10" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><input type="text" name="country" required></td>
+            </tr>
+            <tr>
+                <td><label>Languages Known:</label></td>
+                <td>
+                    <input type="checkbox" name="language" value="English">English
+                    <input type="checkbox" name="language" value="Kannada">Kannada
+                    <input type="checkbox" name="language" value="Hindi">Hindi
+                    <input type="checkbox" name="language" value="Telugu">Telugu
+                </td>
+            </tr>
+        </table>
+        <input type="checkbox" name="declaration">Hereby I declare that all the given details are true
+        <br>
+        <span id="login-link">Log in to <a href="https://ethnus.com">Ethnus</a> website</span>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    <script src="task8.js"></script>
+</body>
+
+</html>

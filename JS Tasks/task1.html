@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Task 1</title>
+    <script>
+        function reverseNo(no) {
+            var rev = 0;
+            while (no > 0) {
+                rev = rev * 10 + no % 10;
+                no = Math.floor(no / 10);
+            }
+            document.getElementById("result").innerHTML += rev;
+        }
+
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>JS Task 1</h1>
+        <div>
+            <p>Enter a number</p>
+            <input type="number" id="no" name="no">
+            <input type="button" value="Reverse" onclick="reverseNo(document.getElementById('no').value)">
+            <p id="result">Result: </p>
+        </div>
+    </center>
+</body>
+
+</html>
